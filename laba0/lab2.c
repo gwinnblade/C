@@ -20,13 +20,3 @@ int main() {
         }
         printf("\n");
     }
-
-//    for (i = 0; i < 3; i++) {
-//        mainDiagonalSum += doubleMatrix[i][i];
-//    }
-//
-//    for (i = 0; i < 3; i++) {
-//        secondaryDiagonalSum += doubleMatrix[i][2 - i];
-//    }
-}
-
