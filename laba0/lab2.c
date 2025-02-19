@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 int main() {
     double Matrix[3][3];
@@ -20,4 +20,15 @@ int main() {
         }
         printf("\n");
     }
+    for (i = 0; i < 3; i++) {
+        DSumMain += Matrix[i][i];
+    }
+
+    for (i = 0; i < 3; i++) {
+        DSumPoboch += Matrix[i][2 - i];
+    }
+
+    printf("Sum Main Diagonal: %.2f\n", DSumMain);
+    printf("Sum Poboch Diagonal: %.2f\n", DSumPoboch);
 }
+
