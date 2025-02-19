@@ -11,6 +11,14 @@ int main() {
             scanf("%d", &Matrix[i][j]);
         }
     }
+    
+    printf("Matrix:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d ", Matrix[i][j]);
+        }
+        printf("\n");
+    }
 
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 2; j++) {
