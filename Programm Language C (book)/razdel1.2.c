@@ -8,6 +8,7 @@ main (){
 	step = 20;
 	
 	fahr = lower;
+	printf("Cels \tFahr \n");
 	while (fahr <= upper) {
 		cels = (5.0/9.0) * (fahr-32.0); 
 		
@@ -15,8 +16,7 @@ main (){
 		òî ñíà÷àëà íóæíî âûïîëíèòü óìíîæåíèå à ïîñëå äåëåíèå
 					(Â ÖÅËÎ×ÈÑËÅÍÍÛÕ ÄÅËÅÍÈßÕ ÍÀ 0)
 					cels = 5 * (fahr-32.0) / 9 */
-					
-		printf("%3.0f %6.1f \n", fahr, cels);
+		printf("%3.0f %8.1f \n", fahr, cels);
 		/*printf("%d\t%d\n", fahr, cels); */
 		/*printf("%3d %6d \n", fahr, cels); */
 		
