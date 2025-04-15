@@ -13,9 +13,16 @@ void reverse_string(char *str) {
         right--;
     }
 }
+
 int main() {
-    char str[] = "Hello, world!";
+    char str[1000];
+    printf("Введите строку: ");
+    fgets(str, sizeof(str), stdin); 
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
     reverse_string(str);
-    printf("%s\n", str); // Вывод: "!dlrow ,olleH"
+    printf("Результат: %s\n", str);
     return 0;
 }
