@@ -4,13 +4,13 @@
 void reverse_string(char *str) {
     if (!str) return;
     int left = 0;
-    int right = strlen(str) - 1;
+    int right = strlen(str) - 1; //strlen - длина строки
     while (left < right) {
         char temp = str[left];
         str[left] = str[right];
         str[right] = temp;
-        left++;
-        right--;
+        left++; // "Флаг" который идет слева на право
+        right--; // "Флаг" который идет справа на лево
     }
 }
 
