@@ -23,7 +23,7 @@ int main() {
     printf("input text: ");
     fgets(text, sizeof(text), stdin);
     
-    text[strcspn(text, "\n")] = '\0';
+    text[strcspn(text, "\n")] = '\0'; // "Стандартное" удаление символа \n
 
     printf("input shift: ");
     scanf("%d", &shift);
