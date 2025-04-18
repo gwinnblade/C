@@ -30,4 +30,4 @@ int main() {
 	reverse_words(str);
 	printf("%s\n", str);
 	return 0;
-}//
+}
