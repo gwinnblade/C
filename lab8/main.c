@@ -35,7 +35,7 @@ int compare_people(const void *a, const void *b, int *fields, int field_count) {
 		
 		switch(field) {
 			case 1:
-				cmp = pa->year - pb->year;
+				cmp = pa->year - pb->year; // (*pa).year
 				break;
 			case 2:
 				cmp = strcmp(pa->name, pb->name);
