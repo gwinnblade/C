@@ -12,10 +12,37 @@ int removeDuplicates(int arr[], int size) {
     return uniqueIndex + 1;
 }
 int main() {
-    int arr[] = {1, 1, 2, 2, 3, 4, 4, 5};
-    int newSize = removeDuplicates(arr, 8);
+    int size;
+
+    printf("Input array: ");
+    scanf("%d", &size);
+
+    if (size <= 0) {
+        printf("Error \n");
+        return 1;
+    }
+
+    int arr[size];
+
+    printf("Input sorted elements:\n", size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < arr[i - 1]) {
+            printf("Error input has been sorted\n");
+            return 1;
+        }
+    }
+
+    int newSize = removeDuplicates(arr, size);
+
+    printf("Massives without duplicates:\n");
     for (int i = 0; i < newSize; i++) {
         printf("%d ", arr[i]);
     }
+    printf("\n");
+
     return 0;
 }
