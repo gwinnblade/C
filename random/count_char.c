@@ -1,3 +1,5 @@
+// Подсчет количества символов в строке
+
 #include <stdio.h>
 #include <ctype.h>
 
