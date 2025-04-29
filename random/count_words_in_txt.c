@@ -1,3 +1,5 @@
+//Подсчет слов в txt файле
+
 #include <stdio.h>
 #include <ctype.h>
 
