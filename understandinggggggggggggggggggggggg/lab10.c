@@ -18,9 +18,9 @@ int main() {
 	
 	char* token = strtok(input, " ");
 	while (token != NULL && c < 20) {
-		nums[c] = atoi(token);
+		nums[c] = atoi(token); // преобразует строку в целое число 
 		c++;
-		token = strtok(NULL, " ");
+		token = strtok(NULL, " "); // разбивает строку на части (токены) по указанным разделителям (например, пробелы, запятые и т. д.).
 	}
 	
 	int max;
