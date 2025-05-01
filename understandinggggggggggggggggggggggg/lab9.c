@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-
+// strcat - добавляет (приписывает) одну строку в конец другой.
 
 double parse_number(char* token) {
 	return atof(token);
@@ -13,7 +13,7 @@ int main() {
 	printf("Input expression: \n");
 	fgets(input, sizeof(input), stdin);
 	
-	input[strcspn(input, "\n")] = '\0'; 
+	input[strcspn(input, "\n")] = '\0'; // Убирает символ новой строки
 	
 	char modified[512] = "";
 	int i = 0;
