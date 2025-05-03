@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// * - указатель 
 double* matrix_operation(double* matrix1, double* matrix2, int n, char operation){
-// malloc (memory allocation (выделение памяти)) - выделение динамической памяти
-// sizeof - размер в байтах
+
 	double* result = (double*)malloc(n*n*sizeof(double));
 	
 	if(operation == '+') {
