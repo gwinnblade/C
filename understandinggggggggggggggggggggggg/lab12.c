@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int day_of_week(int year, int month, int day) {
+int day_of_week(int year, int month, int day) { // Алгоритм Зеллера
     if (month < 3) {
         month += 12;
         year--;
@@ -81,20 +81,23 @@ int main(){
 	printf(" yyyy			- calendar of year\n");
 	printf(" now			- today date\n");
 	scanf("%s", input);
-	
+
+//	NOW
 	if(strlen(input) == 3){
 		int year, month, day;
 		get_current_date(&year, &month, &day);
 		printf("Current date: %04d.%02d.%02d\n", year, month, day);
 		print_month_calendar(year, month);
-		
+
+//	YYYY
 	} else if (strlen(input) == 4) {
 		int year =  atoi (input);
 		if (year >= 1 && year <= 9999)
 			print_year_calendar(year);
 		else
 			printf("Incorrect year\n");
-			
+		
+//	YYYY.MM
 	} else if (strlen(input) == 7) { 
         int year = atoi(input);
         int month = atoi(input + 5);
@@ -102,7 +105,8 @@ int main(){
             print_month_calendar(year, month);
         else
             printf("Incorrent date.\n");
-            
+		
+//	YYYY.MM.DD
 	} else if (strlen(input) == 10) {
         int year = atoi(input);
         int month = atoi(input + 5);
